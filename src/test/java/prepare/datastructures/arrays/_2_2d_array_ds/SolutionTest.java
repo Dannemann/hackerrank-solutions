@@ -24,36 +24,36 @@ public class SolutionTest {
     }
 
     List<List<Integer>> input1() {
-        List<List<Integer>> x = new ArrayList<>(6);
-        x.add(Arrays.asList(1, 1, 1, 0, 0, 0));
-        x.add(Arrays.asList(0, 1, 0, 0, 0, 0));
-        x.add(Arrays.asList(1, 1, 1, 0, 0, 0));
-        x.add(Arrays.asList(0, 0, 2, 4, 4, 0));
-        x.add(Arrays.asList(0, 0, 0, 2, 0, 0));
-        x.add(Arrays.asList(0, 0, 1, 2, 4, 0));
-        return x;
+        List<List<Integer>> r = new ArrayList<>(6);
+        r.add(Arrays.asList(1, 1, 1, 0, 0, 0));
+        r.add(Arrays.asList(0, 1, 0, 0, 0, 0));
+        r.add(Arrays.asList(1, 1, 1, 0, 0, 0));
+        r.add(Arrays.asList(0, 0, 2, 4, 4, 0));
+        r.add(Arrays.asList(0, 0, 0, 2, 0, 0));
+        r.add(Arrays.asList(0, 0, 1, 2, 4, 0));
+        return r;
     }
 
     List<List<Integer>> input2() {
-        List<List<Integer>> x = new ArrayList<>(6);
-        x.add(Arrays.asList(1, 1, 1, 0, 0, 0));
-        x.add(Arrays.asList(0, 1, 0, 0, 0, 0));
-        x.add(Arrays.asList(1, 1, 1, 0, 0, 0));
-        x.add(Arrays.asList(0, 9, 2, -4, -4, 0));
-        x.add(Arrays.asList(0, 0, 0, -2, 0, 0));
-        x.add(Arrays.asList(0, 0, -1, -2, -4, 0));
-        return x;
+        List<List<Integer>> r = new ArrayList<>(6);
+        r.add(Arrays.asList(1, 1, 1, 0, 0, 0));
+        r.add(Arrays.asList(0, 1, 0, 0, 0, 0));
+        r.add(Arrays.asList(1, 1, 1, 0, 0, 0));
+        r.add(Arrays.asList(0, 9, 2, -4, -4, 0));
+        r.add(Arrays.asList(0, 0, 0, -2, 0, 0));
+        r.add(Arrays.asList(0, 0, -1, -2, -4, 0));
+        return r;
     }
 
     List<List<Integer>> input3() {
-        List<List<Integer>> x = new ArrayList<>(6);
-        x.add(Arrays.asList(-9, -9, -9, 1, 1, 1));
-        x.add(Arrays.asList(0, -9, 0, 4, 3, 2));
-        x.add(Arrays.asList(-9, -9, -9, 1, 2, 3));
-        x.add(Arrays.asList(0, 0, 8, 6, 6, 0));
-        x.add(Arrays.asList(0, 0, 0, -2, 0, 0));
-        x.add(Arrays.asList(0, 0, 1, 2, 4, 0));
-        return x;
+        List<List<Integer>> r = new ArrayList<>(6);
+        r.add(Arrays.asList(-9, -9, -9, 1, 1, 1));
+        r.add(Arrays.asList(0, -9, 0, 4, 3, 2));
+        r.add(Arrays.asList(-9, -9, -9, 1, 2, 3));
+        r.add(Arrays.asList(0, 0, 8, 6, 6, 0));
+        r.add(Arrays.asList(0, 0, 0, -2, 0, 0));
+        r.add(Arrays.asList(0, 0, 1, 2, 4, 0));
+        return r;
     }
 
 }
