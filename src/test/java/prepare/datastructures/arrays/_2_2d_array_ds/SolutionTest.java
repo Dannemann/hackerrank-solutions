@@ -12,7 +12,7 @@ public class SolutionTest {
 
     @Test
     public void testSolution() {
-        List<AbstractSolution> solutions = Arrays.asList(
+        List<AbstractSolution> solutions = List.of(
                 new Solution()
         );
 
