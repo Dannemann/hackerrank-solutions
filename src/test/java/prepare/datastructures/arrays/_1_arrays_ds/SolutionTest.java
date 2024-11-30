@@ -17,7 +17,8 @@ public class SolutionTest {
                 new IntRangeCollectionsSwap(),
                 new ForLoop(),
                 new IntStreamRange(),
-                new AddingBackwards());
+                new AddingBackwards()
+        );
 
         for (AbstractSolution s : solutions) {
             assertEquals(Arrays.asList(2, 3, 4, 1), s.reverseArray(Arrays.asList(1, 4, 3, 2)));
