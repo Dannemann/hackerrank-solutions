@@ -24,7 +24,7 @@ public class SolutionTest {
     }
 
     List<List<Integer>> input1() {
-        List<List<Integer>> x = new ArrayList<>();
+        List<List<Integer>> x = new ArrayList<>(6);
         x.add(Arrays.asList(1, 1, 1, 0, 0, 0));
         x.add(Arrays.asList(0, 1, 0, 0, 0, 0));
         x.add(Arrays.asList(1, 1, 1, 0, 0, 0));
@@ -35,7 +35,7 @@ public class SolutionTest {
     }
 
     List<List<Integer>> input2() {
-        List<List<Integer>> x = new ArrayList<>();
+        List<List<Integer>> x = new ArrayList<>(6);
         x.add(Arrays.asList(1, 1, 1, 0, 0, 0));
         x.add(Arrays.asList(0, 1, 0, 0, 0, 0));
         x.add(Arrays.asList(1, 1, 1, 0, 0, 0));
@@ -46,7 +46,7 @@ public class SolutionTest {
     }
 
     List<List<Integer>> input3() {
-        List<List<Integer>> x = new ArrayList<>();
+        List<List<Integer>> x = new ArrayList<>(6);
         x.add(Arrays.asList(-9, -9, -9, 1, 1, 1));
         x.add(Arrays.asList(0, -9, 0, 4, 3, 2));
         x.add(Arrays.asList(-9, -9, -9, 1, 2, 3));
