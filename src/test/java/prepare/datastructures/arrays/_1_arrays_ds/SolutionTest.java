@@ -12,6 +12,9 @@ public class SolutionTest {
     @Test
     public void testSolution() {
         List<AbstractSolution> solutions = Arrays.asList(
+                new Fav_OneForLoopOnly(),
+                new WhileSwap(),
+                new IntRangeCollectionsSwap(),
                 new ForLoop(),
                 new IntStreamRange(),
                 new AddingBackwards());
