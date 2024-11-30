@@ -11,7 +11,7 @@ public class SolutionTest {
 
     @Test
     public void testSolution() {
-        List<AbstractSolution> solutions = Arrays.asList(
+        List<AbstractSolution> solutions = List.of(
                 new Fav_OneForLoopOnly(),
                 new WhileSwap(),
                 new IntRangeCollectionsSwap(),
@@ -21,10 +21,10 @@ public class SolutionTest {
         );
 
         for (AbstractSolution s : solutions) {
-            assertEquals(Arrays.asList(2, 3, 4, 1), s.reverseArray(Arrays.asList(1, 4, 3, 2)));
+            assertEquals(List.of(2, 3, 4, 1), s.reverseArray(Arrays.asList(1, 4, 3, 2)));
             // Custom:
-            assertEquals(Arrays.asList(3, 2, 1), s.reverseArray(Arrays.asList(1, 2, 3)));
-            assertEquals(Arrays.asList(4, 66, 122, 556, 234), s.reverseArray(Arrays.asList(234, 556, 122, 66, 4)));
+            assertEquals(List.of(3, 2, 1), s.reverseArray(Arrays.asList(1, 2, 3)));
+            assertEquals(List.of(4, 66, 122, 556, 234), s.reverseArray(Arrays.asList(234, 556, 122, 66, 4)));
         }
     }
 
