@@ -17,13 +17,13 @@ public class SolutionTest {
         );
 
         for (AbstractSolution s : solutions) {
-            assertEquals(19, s.hourglassSum(input1()));
-            assertEquals(13, s.hourglassSum(input2()));
-            assertEquals(28, s.hourglassSum(input3()));
+            assertEquals(19, s.hourglassSum(input0()));
+            assertEquals(13, s.hourglassSum(input1()));
+            assertEquals(28, s.hourglassSum(input8()));
         }
     }
 
-    List<List<Integer>> input1() {
+    List<List<Integer>> input0() {
         List<List<Integer>> r = new ArrayList<>(6);
         r.add(Arrays.asList(1, 1, 1, 0, 0, 0));
         r.add(Arrays.asList(0, 1, 0, 0, 0, 0));
@@ -34,7 +34,7 @@ public class SolutionTest {
         return r;
     }
 
-    List<List<Integer>> input2() {
+    List<List<Integer>> input1() {
         List<List<Integer>> r = new ArrayList<>(6);
         r.add(Arrays.asList(1, 1, 1, 0, 0, 0));
         r.add(Arrays.asList(0, 1, 0, 0, 0, 0));
@@ -45,7 +45,7 @@ public class SolutionTest {
         return r;
     }
 
-    List<List<Integer>> input3() {
+    List<List<Integer>> input8() {
         List<List<Integer>> r = new ArrayList<>(6);
         r.add(Arrays.asList(-9, -9, -9, 1, 1, 1));
         r.add(Arrays.asList(0, -9, 0, 4, 3, 2));
