@@ -18,8 +18,8 @@ public class SolutionTest {
 
         for (AbstractSolution s : solutions) {
             assertEquals(19, s.hourglassSum(input1()));
-//            assertEquals(13, s.hourglassSum(input2()));
-//            assertEquals(28, s.hourglassSum(input3()));
+            assertEquals(13, s.hourglassSum(input2()));
+            assertEquals(28, s.hourglassSum(input3()));
         }
     }
 
@@ -57,10 +57,3 @@ public class SolutionTest {
     }
 
 }
-
-        
-        
-        
-        
-        
-
