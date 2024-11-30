@@ -1,6 +1,5 @@
 package prepare.datastructures.arrays._1_arrays_ds;
 
-import java.util.Arrays;
 import java.util.List;
 
 class AddingBackwards extends AbstractSolution {
@@ -12,7 +11,7 @@ class AddingBackwards extends AbstractSolution {
         for (Integer i : a)
             r[--size] = i;
 
-        return Arrays.asList(r);
+        return List.of(r);
     }
 
 }
