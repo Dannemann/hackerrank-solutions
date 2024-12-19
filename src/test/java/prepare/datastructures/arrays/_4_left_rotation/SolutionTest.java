@@ -15,6 +15,8 @@ public class SolutionTest {
                 new AddAllSublists(),
                 new SystemArrayCopy(),
                 new CollectionsSwap(),
+                new ListAddRemove(),
+                new LinkedListPop(),
                 new TwoForLoops()
         );
 
