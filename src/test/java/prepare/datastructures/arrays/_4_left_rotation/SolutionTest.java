@@ -14,6 +14,7 @@ public class SolutionTest {
         List<AbstractSolution> solutions = List.of(
                 new AddAllSublists(),
                 new SystemArrayCopy(),
+                new CollectionsSwap(),
                 new TwoForLoops()
         );
 
