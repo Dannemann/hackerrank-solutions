@@ -12,7 +12,8 @@ public class SolutionTest {
     @Test
     public void testSolution() {
         List<AbstractSolution> solutions = List.of(
-                new ManualHashMap()
+                new ManualHashMap(),
+                new AutoHashMap()
         );
 
         for (AbstractSolution s : solutions) {
