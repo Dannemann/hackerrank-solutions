@@ -6,11 +6,12 @@ import java.util.List;
 public class ManualHashMap extends AbstractSolution {
 
     List<Integer> matchingStrings(List<String> stringList, List<String> queries) {
-        String[][] stringsHashMap = new String[1000][];
-        Integer[] countersHashMap = new Integer[1000];
+        int capacity = (int) (stringList.size() / .75 + 1);
+        String[][] stringsHashMap = new String[capacity][];
+        Integer[] countersHashMap = new Integer[capacity];
 
         for (String s : stringList) {
-            int bucketCode = Math.abs(s.hashCode() % 1000);
+            int bucketCode = Math.abs(s.hashCode() % capacity);
 
             if (stringsHashMap[bucketCode] == null) {
                 stringsHashMap[bucketCode] = new String[50];
@@ -20,10 +21,10 @@ public class ManualHashMap extends AbstractSolution {
             stringsHashMap[bucketCode][countersHashMap[bucketCode]++] = s;
         }
 
-        List<Integer> r = new ArrayList<>(1000);
+        List<Integer> r = new ArrayList<>(queries.size());
 
         for (String q : queries) {
-            int bucketCode = Math.abs(q.hashCode() % 1000);
+            int bucketCode = Math.abs(q.hashCode() % capacity);
             Integer bucketCounter = countersHashMap[bucketCode];
             int occurCounter = 0;
 
