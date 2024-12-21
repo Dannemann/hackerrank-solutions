@@ -13,7 +13,8 @@ public class SolutionTest {
     public void testSolution() {
         List<AbstractSolution> solutions = List.of(
                 new ManualHashMap(),
-                new AutoHashMap()
+                new AutoHashMap(),
+                new BubbleLoL()
         );
 
         for (AbstractSolution s : solutions) {
