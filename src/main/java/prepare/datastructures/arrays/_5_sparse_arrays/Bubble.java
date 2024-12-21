@@ -1,24 +1,20 @@
 package prepare.datastructures.arrays._5_sparse_arrays;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Bubble extends AbstractSolution {
 
     List<Integer> matchingStrings(List<String> stringList, List<String> queries) {
-        List<Integer> r = new ArrayList<>(queries.size());
-
-        for (String q : queries) {
+        return queries.stream().map(q -> {
             int counter = 0;
 
             for (String s : stringList)
                 if (s.equals(q))
                     counter++;
 
-            r.add(counter);
-        }
-
-        return r;
+            return counter;
+        }).collect(Collectors.toList());
     }
 
 }

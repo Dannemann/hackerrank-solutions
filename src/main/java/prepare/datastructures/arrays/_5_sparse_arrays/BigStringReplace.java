@@ -1,9 +1,9 @@
 package prepare.datastructures.arrays._5_sparse_arrays;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class BigStringReplace extends AbstractSolution {
 
@@ -24,15 +24,13 @@ public class BigStringReplace extends AbstractSolution {
         stringArray = null;
         System.gc();
 
-        int qSize = queries.size();
-        Map<String, Integer> cache = new HashMap<>((int) (qSize / .75 + 1));
-        List<Integer> r = new ArrayList<>(qSize);
+        Map<String, Integer> cache = new HashMap<>((int) (queries.size() / .75 + 1));
 
-        for (String q : queries) {
+        return queries.stream().map(q -> {
             Integer counter = cache.get(q);
 
             if (counter != null)
-                r.add(counter);
+                return counter;
             else {
                 int qLen = q.length();
                 String qSemicoloned = ";" + q + ";";
@@ -49,12 +47,10 @@ public class BigStringReplace extends AbstractSolution {
                 dif = dif - semicolons;
                 int occurrences = dif > 0 ? dif / qLen : 0;
 
-                r.add(occurrences);
                 cache.put(q, occurrences);
+                return occurrences;
             }
-        }
-
-        return r;
+        }).collect(Collectors.toList());
     }
 
 }
