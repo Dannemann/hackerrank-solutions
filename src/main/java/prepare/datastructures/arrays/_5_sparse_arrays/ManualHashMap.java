@@ -25,12 +25,13 @@ public class ManualHashMap extends AbstractSolution {
 
         for (String q : queries) {
             int bucketCode = Math.abs(q.hashCode() % capacity);
+            String[] bucket = stringsHashMap[bucketCode];
             Integer bucketCounter = countersHashMap[bucketCode];
             int occurCounter = 0;
 
             if (bucketCounter != null)
                 for (int i = 0; i < bucketCounter; i++)
-                    if (stringsHashMap[bucketCode][i].equals(q))
+                    if (bucket[i].equals(q))
                         occurCounter++;
 
             r.add(occurCounter);
