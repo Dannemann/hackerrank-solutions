@@ -10,7 +10,7 @@ public class ManualHashMap extends AbstractSolution {
         Integer[] countersHashMap = new Integer[1000];
 
         for (String s : stringList) {
-            int bucketCode = s.hashCode() % 1000;
+            int bucketCode = Math.abs(s.hashCode() % 1000);
 
             if (stringsHashMap[bucketCode] == null) {
                 stringsHashMap[bucketCode] = new String[50];
@@ -23,7 +23,7 @@ public class ManualHashMap extends AbstractSolution {
         List<Integer> r = new ArrayList<>(1000);
 
         for (String q : queries) {
-            int bucketCode = q.hashCode() % 1000;
+            int bucketCode = Math.abs(q.hashCode() % 1000);
             Integer bucketCounter = countersHashMap[bucketCode];
             int occurCounter = 0;
 
