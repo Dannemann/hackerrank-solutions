@@ -14,6 +14,7 @@ public class SolutionTest {
         List<AbstractSolution> solutions = List.of(
                 new ManualHashMap(),
                 new AutoHashMap(),
+                new CollectionsFrequency(),
                 new BigStringReplaceLoL(),
                 new BubbleLoL()
         );
