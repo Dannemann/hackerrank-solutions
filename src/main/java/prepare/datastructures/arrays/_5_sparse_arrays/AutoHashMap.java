@@ -1,9 +1,9 @@
 package prepare.datastructures.arrays._5_sparse_arrays;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class AutoHashMap extends AbstractSolution {
 
@@ -15,14 +15,10 @@ public class AutoHashMap extends AbstractSolution {
             stringMap.put(s, counter == null ? 1 : ++counter);
         }
 
-        List<Integer> r = new ArrayList<>(queries.size());
-
-        for (String q : queries) {
+        return queries.stream().map(q -> {
             Integer counter = stringMap.get(q);
-            r.add(counter == null ? 0 : counter);
-        }
-
-        return r;
+            return counter == null ? 0 : counter;
+        }).collect(Collectors.toUnmodifiableList());
     }
 
 }

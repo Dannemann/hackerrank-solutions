@@ -14,7 +14,7 @@ public class Bubble extends AbstractSolution {
                     counter++;
 
             return counter;
-        }).collect(Collectors.toList());
+        }).collect(Collectors.toUnmodifiableList());
     }
 
 }

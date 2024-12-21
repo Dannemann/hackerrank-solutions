@@ -1,7 +1,7 @@
 package prepare.datastructures.arrays._5_sparse_arrays;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ManualHashMap extends AbstractSolution {
 
@@ -21,9 +21,7 @@ public class ManualHashMap extends AbstractSolution {
             stringsHashMap[bucketCode][countersHashMap[bucketCode]++] = s;
         }
 
-        List<Integer> r = new ArrayList<>(queries.size());
-
-        for (String q : queries) {
+        return queries.stream().map(q -> {
             int bucketCode = Math.abs(q.hashCode() % capacity);
             String[] bucket = stringsHashMap[bucketCode];
             Integer bucketCounter = countersHashMap[bucketCode];
@@ -34,10 +32,8 @@ public class ManualHashMap extends AbstractSolution {
                     if (bucket[i].equals(q))
                         occurCounter++;
 
-            r.add(occurCounter);
-        }
-
-        return r;
+            return occurCounter;
+        }).collect(Collectors.toUnmodifiableList());
     }
 
 }

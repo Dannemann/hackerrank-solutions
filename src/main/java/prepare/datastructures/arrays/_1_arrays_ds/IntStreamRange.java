@@ -8,7 +8,7 @@ class IntStreamRange extends AbstractSolution {
 
     List<Integer> reverseArray(List<Integer> a) {
         int size = a.size();
-        return IntStream.range(0, size).map(i -> a.get(size - i - 1)).boxed().collect(Collectors.toList());
+        return IntStream.range(0, size).map(i -> a.get(size - i - 1)).boxed().collect(Collectors.toUnmodifiableList());
     }
 
 }

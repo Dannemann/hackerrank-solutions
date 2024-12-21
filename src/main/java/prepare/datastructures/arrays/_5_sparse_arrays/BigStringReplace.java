@@ -50,7 +50,7 @@ public class BigStringReplace extends AbstractSolution {
                 cache.put(q, occurrences);
                 return occurrences;
             }
-        }).collect(Collectors.toList());
+        }).collect(Collectors.toUnmodifiableList());
     }
 
 }
