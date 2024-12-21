@@ -6,11 +6,35 @@ import java.util.List;
 public class ManualHashMap extends AbstractSolution {
 
     List<Integer> matchingStrings(List<String> stringList, List<String> queries) {
-        int[] hashMap = new int[1000];
+        String[][] stringsHashMap = new String[1000][];
+        Integer[] countersHashMap = new Integer[1000];
+
+        for (String s : stringList) {
+            int bucketCode = s.hashCode() % 1000;
+
+            if (stringsHashMap[bucketCode] == null) {
+                stringsHashMap[bucketCode] = new String[50];
+                countersHashMap[bucketCode] = 0;
+            }
+
+            stringsHashMap[bucketCode][countersHashMap[bucketCode]++] = s;
+        }
+
         List<Integer> r = new ArrayList<>(1000);
 
-        stringList.forEach(s -> hashMap[s.hashCode() % 1000]++);
-        queries.forEach(s -> r.add(hashMap[s.hashCode() % 1000]));
+        for (String q : queries) {
+            int bucketCode = q.hashCode() % 1000;
+            String[] bucket = stringsHashMap[bucketCode];
+            Integer bucketCounter = countersHashMap[bucketCode];
+            int occurCounter = 0;
+
+            if (bucketCounter != null)
+                for (int i = 0; i < bucketCounter; i++)
+                    if (bucket[i].equals(q))
+                        occurCounter++;
+
+            r.add(occurCounter);
+        }
 
         return r;
     }
