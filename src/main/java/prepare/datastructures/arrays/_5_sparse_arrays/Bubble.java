@@ -3,7 +3,7 @@ package prepare.datastructures.arrays._5_sparse_arrays;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BubbleLoL extends AbstractSolution {
+public class Bubble extends AbstractSolution {
 
     List<Integer> matchingStrings(List<String> stringList, List<String> queries) {
         List<Integer> r = new ArrayList<>(queries.size());

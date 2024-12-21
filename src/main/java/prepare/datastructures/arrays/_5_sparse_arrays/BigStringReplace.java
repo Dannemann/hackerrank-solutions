@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class BigStringReplaceLoL extends AbstractSolution {
+public class BigStringReplace extends AbstractSolution {
 
     List<Integer> matchingStrings(List<String> stringList, List<String> queries) {
         int sSize = stringList.size();
