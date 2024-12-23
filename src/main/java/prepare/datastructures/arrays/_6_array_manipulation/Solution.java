@@ -6,7 +6,7 @@ public class Solution extends AbstractSolution {
 
     long arrayManipulation(int n, List<List<Integer>> queries) {
         int[] array = new int[n];
-        int biggest = 0;
+        int biggest = Integer.MIN_VALUE;
 
         for (List<Integer> query : queries)
             for (int i = query.get(0) - 1; i < query.get(1); i++) {
