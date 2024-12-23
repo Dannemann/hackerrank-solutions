@@ -2,7 +2,7 @@ package prepare.datastructures.arrays._6_array_manipulation;
 
 import java.util.List;
 
-public class Bubble extends AbstractSolution {
+public class BubbleByPosition extends AbstractSolution {
 
     long arrayManipulation(int n, List<List<Integer>> queries) {
         long[] array = new long[n];

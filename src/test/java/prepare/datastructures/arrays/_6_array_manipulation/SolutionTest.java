@@ -17,7 +17,7 @@ public class SolutionTest {
     @Test
     public void testSolution() {
         List<AbstractSolution> solutions = List.of(
-//                new Bubble(), // Too slow.
+//                new BubbleByPosition(), // Too slow.
         );
 
         for (AbstractSolution s : solutions) {
