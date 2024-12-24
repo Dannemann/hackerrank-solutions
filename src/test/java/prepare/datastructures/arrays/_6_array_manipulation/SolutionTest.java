@@ -18,6 +18,7 @@ public class SolutionTest {
     public void testSolution() {
         List<AbstractSolution> solutions = List.of(
 //                new BubbleByPosition(), // Too slow.
+                new SortedPrefixSum(),
                 new DifferenceArray()
         );
 

@@ -5,10 +5,10 @@ import java.util.List;
 public class DifferenceArray extends AbstractSolution {
 
     long arrayManipulation(int n, List<List<Integer>> queries) {
-        long[] array = new long[n + 1];
+        int[] array = new int[n + 1];
 
         for (List<Integer> q : queries) {
-            int k = q.get(2);
+            Integer k = q.get(2);
 
             array[q.get(0) - 1] += k;
             array[q.get(1)] -= k;
