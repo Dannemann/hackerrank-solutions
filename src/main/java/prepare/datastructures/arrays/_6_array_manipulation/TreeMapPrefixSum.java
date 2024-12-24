@@ -3,7 +3,7 @@ package prepare.datastructures.arrays._6_array_manipulation;
 import java.util.List;
 import java.util.TreeMap;
 
-public class SortedPrefixSum extends AbstractSolution {
+public class TreeMapPrefixSum extends AbstractSolution {
 
     long arrayManipulation(int n, List<List<Integer>> queries) {
         TreeMap<Integer, Integer> sortedMap = new TreeMap<>();
