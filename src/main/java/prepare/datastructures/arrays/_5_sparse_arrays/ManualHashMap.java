@@ -21,6 +21,8 @@ public class ManualHashMap extends AbstractSolution {
             stringsHashMap[bucketCode][countersHashMap[bucketCode]++] = s;
         }
 
+        stringList = null;
+
         return queries.stream().map(q -> {
             int bucketCode = Math.abs(q.hashCode() % capacity);
             String[] bucket = stringsHashMap[bucketCode];

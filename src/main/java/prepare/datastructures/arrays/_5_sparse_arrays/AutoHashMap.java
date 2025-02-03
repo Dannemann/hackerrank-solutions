@@ -15,6 +15,8 @@ public class AutoHashMap extends AbstractSolution {
             stringMap.put(s, counter == null ? 1 : ++counter);
         }
 
+        stringList = null;
+
         return queries.stream().map(q -> {
             Integer counter = stringMap.get(q);
             return counter == null ? 0 : counter;

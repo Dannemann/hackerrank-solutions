@@ -8,20 +8,12 @@ import java.util.stream.Collectors;
 public class BigStringReplace extends AbstractSolution {
 
     List<Integer> matchingStrings(List<String> stringList, List<String> queries) {
-        int sSize = stringList.size();
-        String[] stringArray = stringList.toArray(new String[sSize]);
-
-        stringList = null;
-        System.gc();
-
         StringBuilder sb = new StringBuilder(";");
 
-        for (int i = 0; i < sSize; i++) {
-            sb.append(stringArray[i]).append(";");
-            stringArray[i] = null;
-        }
+        for (String s : stringList)
+            sb.append(s).append(";");
 
-        stringArray = null;
+        stringList = null;
         System.gc();
 
         Map<String, Integer> cache = new HashMap<>((int) (queries.size() / .75 + 1));
