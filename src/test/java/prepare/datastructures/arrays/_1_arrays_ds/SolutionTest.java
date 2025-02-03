@@ -12,7 +12,7 @@ public class SolutionTest {
     @Test
     public void testSolution() {
         List<AbstractSolution> solutions = List.of(
-                new Fav_OneForLoopOnly(),
+                new OneLoopSwap(),
                 new WhileSwap(),
                 new IntRangeCollectionsSwap(),
                 new ForLoop(),
