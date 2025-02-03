@@ -8,6 +8,7 @@ class SystemArrayCopy extends AbstractSolution {
 
     List<Integer> rotateLeft(int d, List<Integer> arr) {
         int[] ar = arr.stream().mapToInt(i -> i).toArray();
+        arr = null;
 
         int length = ar.length;
         int dif = length - d;

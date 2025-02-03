@@ -13,7 +13,7 @@ class CollectionsSwap extends AbstractSolution {
         return arr;
     }
 
-    void revertSublist(List<Integer> arr, int i, int j) {
+    private void revertSublist(List<Integer> arr, int i, int j) {
         for (; i < j; Collections.swap(arr, i++, j--)) ;
     }
 
