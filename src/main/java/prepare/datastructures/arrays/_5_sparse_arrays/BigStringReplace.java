@@ -8,10 +8,7 @@ import java.util.stream.Collectors;
 public class BigStringReplace extends AbstractSolution {
 
     List<Integer> matchingStrings(List<String> stringList, List<String> queries) {
-        StringBuilder sb = new StringBuilder(";");
-
-        for (String s : stringList)
-            sb.append(s).append(";");
+        StringBuilder sb = new StringBuilder(";" + String.join(";", stringList) + ";");
 
         stringList = null;
         System.gc();
