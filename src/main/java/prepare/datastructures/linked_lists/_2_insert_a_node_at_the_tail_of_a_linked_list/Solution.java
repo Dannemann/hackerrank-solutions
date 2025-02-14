@@ -6,8 +6,8 @@ class Solution extends AbstractSolution {
         if (head == null)
             return new SinglyLinkedListNode(data);
 
-        SinglyLinkedListNode current = head;
-        SinglyLinkedListNode last = null;
+        SinglyLinkedListNode current = head.next;
+        SinglyLinkedListNode last = head;
 
         while (current != null) {
             last = current;
