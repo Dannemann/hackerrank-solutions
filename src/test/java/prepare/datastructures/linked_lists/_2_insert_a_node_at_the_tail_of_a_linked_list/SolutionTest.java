@@ -16,17 +16,15 @@ public class SolutionTest {
         );
 
         for (AbstractSolution s : solutions) {
-            SinglyLinkedList llist;
+            SinglyLinkedList llist1 = new SinglyLinkedList();
+            List<Integer> input0 = input0();
+            input0.forEach(llistItem -> llist1.head = s.insertNodeAtTail(llist1.head, llistItem));
+            assertEquals(input0, sll2l(llist1));
 
-            llist = new SinglyLinkedList();
-            for (int llistItem : input0())
-                llist.head = s.insertNodeAtTail(llist.head, llistItem);
-            assertEquals(input0(), sll2l(llist));
-
-            llist = new SinglyLinkedList();
-            for (int llistItem : input1())
-                llist.head = s.insertNodeAtTail(llist.head, llistItem);
-            assertEquals(input1(), sll2l(llist));
+            SinglyLinkedList llist2 = new SinglyLinkedList();
+            List<Integer> input1 = input1();
+            input1.forEach(llistItem -> llist2.head = s.insertNodeAtTail(llist2.head, llistItem));
+            assertEquals(input1, sll2l(llist2));
         }
     }
 
