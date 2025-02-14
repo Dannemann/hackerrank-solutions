@@ -7,6 +7,7 @@ import java.util.Collections;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static utils.ListUtils.integerList;
 
 public class SolutionTest {
 
@@ -18,42 +19,17 @@ public class SolutionTest {
 
         for (AbstractSolution s : solutions) {
             SinglyLinkedList llist0 = new SinglyLinkedList();
-            List<Integer> input0 = input0();
+            List<Integer> input0 = integerList(383, 484, 392, 975, 321);
             input0.forEach(llistItem -> llist0.head = s.insertNodeAtHead(llist0.head, llistItem));
             Collections.reverse(input0);
             assertEquals(input0, sll2l(llist0));
 
             SinglyLinkedList llist1 = new SinglyLinkedList();
-            List<Integer> input1 = input1();
+            List<Integer> input1 = integerList(321, 641, 653, 524, 952, 337, 955, 891, 590, 133);
             input1.forEach(llistItem -> llist1.head = s.insertNodeAtHead(llist1.head, llistItem));
             Collections.reverse(input1);
             assertEquals(input1, sll2l(llist1));
         }
-    }
-
-    List<Integer> input0() {
-        List<Integer> r = new ArrayList<>();
-        r.add(383);
-        r.add(484);
-        r.add(392);
-        r.add(975);
-        r.add(321);
-        return r;
-    }
-
-    List<Integer> input1() {
-        List<Integer> r = new ArrayList<>();
-        r.add(321);
-        r.add(641);
-        r.add(653);
-        r.add(524);
-        r.add(952);
-        r.add(337);
-        r.add(955);
-        r.add(891);
-        r.add(590);
-        r.add(133);
-        return r;
     }
 
     List<Integer> sll2l(SinglyLinkedList llist) {
