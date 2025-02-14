@@ -3,6 +3,7 @@ package prepare.datastructures.linked_lists._1_print_the_elements_of_a_linked_li
 import org.junit.Test;
 
 import java.util.List;
+import java.util.stream.Stream;
 
 import static org.junit.Assert.assertEquals;
 
@@ -15,25 +16,14 @@ public class SolutionTest {
         );
 
         for (AbstractSolution s : solutions) {
-            assertEquals(List.of(16, 13), s.printLinkedList(input0()));
-            assertEquals(List.of(17, 19, 5, 12), s.printLinkedList(input1()));
+            assertEquals(List.of(16, 13), s.printLinkedList(singlyll(16, 13).head));
+            assertEquals(List.of(17, 19, 5, 12), s.printLinkedList(singlyll(17, 19, 5, 12).head));
         }
-    }
-
-    SinglyLinkedListNode input0() {
-        return singlyll(16, 13).head;
-    }
-
-    SinglyLinkedListNode input1() {
-        return singlyll(17, 19, 5, 12).head;
     }
 
     SinglyLinkedList singlyll(Integer... ints) {
         SinglyLinkedList llist = new SinglyLinkedList();
-
-        for (Integer llistItem : ints)
-            llist.insertNode(llistItem);
-
+        Stream.of(ints).forEach(llist::insertNode);
         return llist;
     }
 
