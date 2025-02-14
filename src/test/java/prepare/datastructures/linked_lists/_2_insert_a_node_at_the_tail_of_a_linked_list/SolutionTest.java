@@ -19,13 +19,13 @@ public class SolutionTest {
             SinglyLinkedList llist;
 
             llist = new SinglyLinkedList();
-            for (int i : input0())
-                llist.head = s.insertNodeAtTail(llist.head, i);
+            for (int llistItem : input0())
+                llist.head = s.insertNodeAtTail(llist.head, llistItem);
             assertEquals(input0(), sll2l(llist));
 
             llist = new SinglyLinkedList();
-            for (int i : input1())
-                llist.head = s.insertNodeAtTail(llist.head, i);
+            for (int llistItem : input1())
+                llist.head = s.insertNodeAtTail(llist.head, llistItem);
             assertEquals(input1(), sll2l(llist));
         }
     }
