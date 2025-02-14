@@ -6,6 +6,5 @@ package prepare.datastructures.linked_lists._3_insert_a_node_at_the_head_of_a_li
 class SinglyLinkedList {
 
     public SinglyLinkedListNode head;
-    public SinglyLinkedListNode tail;
 
 }
