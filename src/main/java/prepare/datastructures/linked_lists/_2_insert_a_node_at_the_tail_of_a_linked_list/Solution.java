@@ -5,24 +5,18 @@ class Solution extends AbstractSolution {
     SinglyLinkedListNode insertNodeAtTail(SinglyLinkedListNode head, int data) {
         if (head == null)
             return new SinglyLinkedListNode(data);
-        else {
-            SinglyLinkedListNode second = head.next;
 
-            if (second == null)
-                head.next = new SinglyLinkedListNode(data);
-            else {
-                SinglyLinkedListNode last = null;
+        SinglyLinkedListNode current = head;
+        SinglyLinkedListNode last = null;
 
-                while (second != null) {
-                    last = second;
-                    second = second.next;
-                }
-
-                last.next = new SinglyLinkedListNode(data);
-            }
-
-            return head;
+        while (current != null) {
+            last = current;
+            current = current.next;
         }
+
+        last.next = new SinglyLinkedListNode(data);
+
+        return head;
     }
 
 }
