@@ -65,7 +65,7 @@ public class SolutionTest {
         return r;
     }
 
-    private static List<List<Integer>> readInput(String inputFile, int initialCapacity) {
+    List<List<Integer>> readInput(String inputFile, int initialCapacity) {
         List<List<Integer>> r = new ArrayList<>(initialCapacity);
         File input = new File(SolutionTest.class.getResource(inputFile).getFile());
         try (BufferedReader reader = new BufferedReader(new FileReader(input))) {
