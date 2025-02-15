@@ -16,12 +16,12 @@ public class SolutionTest {
         );
 
         for (AbstractSolution s : solutions) {
-            assertEquals(List.of(16, 13), s.printLinkedList(sll2l(16, 13).head));
-            assertEquals(List.of(17, 19, 5, 12), s.printLinkedList(sll2l(17, 19, 5, 12).head));
+            assertEquals(List.of(16, 13), s.printLinkedList(l2sll(16, 13).head));
+            assertEquals(List.of(17, 19, 5, 12), s.printLinkedList(l2sll(17, 19, 5, 12).head));
         }
     }
 
-    SinglyLinkedList sll2l(Integer... ints) {
+    SinglyLinkedList l2sll(Integer... ints) {
         SinglyLinkedList llist = new SinglyLinkedList();
         Stream.of(ints).forEach(llist::insertNode);
         return llist;

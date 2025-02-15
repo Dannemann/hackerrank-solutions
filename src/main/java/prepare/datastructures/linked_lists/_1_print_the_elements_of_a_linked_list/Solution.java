@@ -10,12 +10,8 @@ class Solution extends AbstractSolution {
 
         while (head != null) {
             r.add(head.data);
-
-            System.out.println(head.data);
             head = head.next;
         }
-
-        System.out.println();
 
         return r;
     }
