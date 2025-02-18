@@ -2,9 +2,7 @@ package prepare.datastructures.linked_lists._6_print_in_reverse;
 
 import org.junit.Test;
 import prepare.datastructures.linked_lists._0_Resources.SinglyLinkedList;
-import prepare.datastructures.linked_lists._0_Resources.SinglyLinkedListNode;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -21,17 +19,8 @@ public class SolutionTest {
         for (AbstractSolution s : solutions) {
             SinglyLinkedList llist00 = new SinglyLinkedList();
             integerList(16, 12, 4, 2, 5).forEach(llist00::insertNode);
-            assertEquals(List.of(5, 2, 4, 12, 16), sll2l(s.reversePrint(llist00.head)));
+            assertEquals("5241216", s.reversePrint(llist00.head));
         }
-    }
-
-    List<Integer> sll2l(SinglyLinkedListNode node) {
-        List<Integer> r = new ArrayList<>();
-        while (node != null) {
-            r.add(node.data);
-            node = node.next;
-        }
-        return r;
     }
 
 }
