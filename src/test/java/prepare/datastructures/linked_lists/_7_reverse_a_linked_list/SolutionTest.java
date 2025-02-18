@@ -20,9 +20,9 @@ public class SolutionTest {
         );
 
         for (AbstractSolution s : solutions) {
-            SinglyLinkedList llist00 = new SinglyLinkedList();
-            integerList(1, 2, 3, 4, 5).forEach(llist00::insertNode);
-            assertEquals(List.of(5, 4, 3, 2, 1), sll2l(s.reverse(llist00.head)));
+            SinglyLinkedList llist01 = new SinglyLinkedList();
+            integerList(1, 2, 3, 4, 5).forEach(llist01::insertNode);
+            assertEquals(List.of(5, 4, 3, 2, 1), sll2l(s.reverse(llist01.head)));
         }
     }
 

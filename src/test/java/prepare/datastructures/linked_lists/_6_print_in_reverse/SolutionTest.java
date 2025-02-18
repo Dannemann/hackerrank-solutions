@@ -17,9 +17,9 @@ public class SolutionTest {
         );
 
         for (AbstractSolution s : solutions) {
-            SinglyLinkedList llist00 = new SinglyLinkedList();
-            integerList(16, 12, 4, 2, 5).forEach(llist00::insertNode);
-            assertEquals("5241216", s.reversePrint(llist00.head));
+            SinglyLinkedList llist01 = new SinglyLinkedList();
+            integerList(16, 12, 4, 2, 5).forEach(llist01::insertNode);
+            assertEquals("5241216", s.reversePrint(llist01.head));
         }
     }
 
