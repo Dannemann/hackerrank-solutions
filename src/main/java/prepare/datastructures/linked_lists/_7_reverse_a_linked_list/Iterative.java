@@ -2,7 +2,7 @@ package prepare.datastructures.linked_lists._7_reverse_a_linked_list;
 
 import prepare.datastructures.linked_lists.SinglyLinkedListNode;
 
-class Solution extends AbstractSolution {
+class Iterative extends AbstractSolution {
 
     SinglyLinkedListNode reverse(SinglyLinkedListNode llist) {
         SinglyLinkedListNode prev = null;
