@@ -1,5 +1,7 @@
 package prepare.datastructures.linked_lists._6_print_in_reverse;
 
+import prepare.datastructures.linked_lists._0_Resources.SinglyLinkedListNode;
+
 class Solution extends AbstractSolution {
 
     SinglyLinkedListNode reversePrint(SinglyLinkedListNode llist) {

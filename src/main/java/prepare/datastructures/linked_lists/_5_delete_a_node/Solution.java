@@ -1,5 +1,7 @@
 package prepare.datastructures.linked_lists._5_delete_a_node;
 
+import prepare.datastructures.linked_lists._0_Resources.SinglyLinkedListNode;
+
 class Solution extends AbstractSolution {
 
     SinglyLinkedListNode deleteNode(SinglyLinkedListNode llist, int position) {

@@ -1,5 +1,7 @@
 package prepare.datastructures.linked_lists._4_Insert_a_node_at_a_specific_position_in_a_linked_list;
 
+import prepare.datastructures.linked_lists._0_Resources.SinglyLinkedListNode;
+
 class Solution extends AbstractSolution {
 
     SinglyLinkedListNode insertNodeAtPosition(SinglyLinkedListNode llist, int data, int position) {

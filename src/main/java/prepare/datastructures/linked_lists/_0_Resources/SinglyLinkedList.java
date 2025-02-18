@@ -1,9 +1,9 @@
-package prepare.datastructures.linked_lists._6_print_in_reverse;
+package prepare.datastructures.linked_lists._0_Resources;
 
 /**
  * Code provided by HackerRank.
  */
-class SinglyLinkedList {
+public class SinglyLinkedList {
 
     public SinglyLinkedListNode head;
     public SinglyLinkedListNode tail;

@@ -1,9 +1,9 @@
-package prepare.datastructures.linked_lists._3_insert_a_node_at_the_head_of_a_linked_list;
+package prepare.datastructures.linked_lists._0_Resources;
 
 /**
  * Code provided by HackerRank.
  */
-class SinglyLinkedListNode {
+public class SinglyLinkedListNode {
 
     public int data;
     public SinglyLinkedListNode next;

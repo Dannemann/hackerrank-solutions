@@ -1,6 +1,7 @@
 package prepare.datastructures.linked_lists._1_print_the_elements_of_a_linked_list;
 
 import org.junit.Test;
+import prepare.datastructures.linked_lists._0_Resources.SinglyLinkedList;
 
 import java.util.List;
 import java.util.stream.Stream;
