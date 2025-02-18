@@ -9,6 +9,8 @@ class Solution extends AbstractSolution {
         List<Integer> r = new ArrayList<>();
 
         while (head != null) {
+            System.out.println(head.data);
+
             r.add(head.data);
             head = head.next;
         }
