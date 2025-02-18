@@ -1,4 +1,4 @@
-package prepare.datastructures.linked_lists._0_Resources;
+package prepare.datastructures.linked_lists;
 
 /**
  * Code provided by HackerRank.

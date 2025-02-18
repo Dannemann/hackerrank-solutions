@@ -1,8 +1,8 @@
 package prepare.datastructures.linked_lists._5_delete_a_node;
 
 import org.junit.Test;
-import prepare.datastructures.linked_lists._0_Resources.SinglyLinkedList;
-import prepare.datastructures.linked_lists._0_Resources.SinglyLinkedListNode;
+import prepare.datastructures.linked_lists.SinglyLinkedList;
+import prepare.datastructures.linked_lists.SinglyLinkedListNode;
 
 import java.util.ArrayList;
 import java.util.List;

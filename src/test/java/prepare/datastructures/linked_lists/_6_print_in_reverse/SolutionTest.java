@@ -1,7 +1,7 @@
 package prepare.datastructures.linked_lists._6_print_in_reverse;
 
 import org.junit.Test;
-import prepare.datastructures.linked_lists._0_Resources.SinglyLinkedList;
+import prepare.datastructures.linked_lists.SinglyLinkedList;
 
 import java.util.List;
 

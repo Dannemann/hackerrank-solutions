@@ -1,8 +1,8 @@
 package prepare.datastructures.linked_lists._7_reverse_a_linked_list;
 
 import org.junit.Test;
-import prepare.datastructures.linked_lists._0_Resources.SinglyLinkedList;
-import prepare.datastructures.linked_lists._0_Resources.SinglyLinkedListNode;
+import prepare.datastructures.linked_lists.SinglyLinkedList;
+import prepare.datastructures.linked_lists.SinglyLinkedListNode;
 
 import java.util.ArrayList;
 import java.util.List;
