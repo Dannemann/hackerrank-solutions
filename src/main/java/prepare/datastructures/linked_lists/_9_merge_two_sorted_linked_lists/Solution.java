@@ -20,24 +20,20 @@ class Solution extends AbstractSolution {
                     if (next1 != null && next1.data < e2.data) {
                         prev = e1;
                         e1 = next1;
-                        continue;
+                    } else {
+                        e2.next = e1.next;
+                        e1.next = e2;
+                        prev = e2;
+                        e2 = next2;
                     }
-
-                    e2.next = e1.next;
-                    e1.next = e2;
-                    prev = e2.next;
                 } else {
                     prev.next = e2;
                     e2.next = e1;
                     prev = e2;
                     e2 = next2;
-                    continue;
                 }
             } else
                 break;
-
-            e1 = next1;
-            e2 = next2;
         }
 
         if (e2 != null)
