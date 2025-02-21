@@ -10,31 +10,29 @@ class Solution extends AbstractSolution {
         SinglyLinkedListNode next2 = null;
         SinglyLinkedListNode prev = new SinglyLinkedListNode(-1);
 
-        while (e1 != null) {
-            SinglyLinkedListNode next1 = e1.next;
-
+        while (e1 != null)
             if (e2 != null) {
+                SinglyLinkedListNode next1 = e1.next;
                 next2 = e2.next;
 
                 if (e1.data <= e2.data) {
                     if (next1 != null && next1.data < e2.data) {
                         prev = e1;
                         e1 = next1;
-                    } else {
-                        e2.next = e1.next;
-                        e1.next = e2;
-                        prev = e2;
-                        e2 = next2;
+                        continue;
                     }
+
+                    e2.next = e1.next;
+                    e1.next = e2;
                 } else {
                     prev.next = e2;
                     e2.next = e1;
-                    prev = e2;
-                    e2 = next2;
                 }
+
+                prev = e2;
+                e2 = next2;
             } else
                 break;
-        }
 
         if (e2 != null)
             e2.next = next2;
