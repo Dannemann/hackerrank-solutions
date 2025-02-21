@@ -28,6 +28,7 @@ public class SolutionTest {
             assertEquals(List.of(11, 2, 9), sll2l(s.deleteNode(llist1.head, 1)));
 
             // Custom:
+
             SinglyLinkedList llist1c = new SinglyLinkedList();
             integerList(1).forEach(llist1c::insertNode);
             assertEquals(List.of(), sll2l(s.deleteNode(llist1c.head, 0)));
