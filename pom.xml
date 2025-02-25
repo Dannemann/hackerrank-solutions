@@ -4,7 +4,7 @@
 
     <groupId>br.com.jean.dannemann.hackerrank.solutions</groupId>
     <artifactId>hackerrank-solutions</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
 
     <name>HackerRank Solutions</name>
 
