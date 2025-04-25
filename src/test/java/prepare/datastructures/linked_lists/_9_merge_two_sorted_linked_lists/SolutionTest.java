@@ -15,7 +15,7 @@ public class SolutionTest {
     @Test
     public void testSolution() {
         List<AbstractSolution> solutions = List.of(
-                new Solution()
+                new Iterative()
         );
 
         for (AbstractSolution s : solutions) {

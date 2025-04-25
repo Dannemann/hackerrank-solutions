@@ -2,7 +2,7 @@ package prepare.datastructures.linked_lists._9_merge_two_sorted_linked_lists;
 
 import prepare.datastructures.linked_lists.SinglyLinkedListNode;
 
-class Solution extends AbstractSolution {
+class Iterative extends AbstractSolution {
 
     SinglyLinkedListNode mergeLists(SinglyLinkedListNode head1, SinglyLinkedListNode head2) {
         SinglyLinkedListNode e1 = head1;
